@@ -228,8 +228,30 @@
     font-weight: 600;
     margin-top: 10px;
 }
+.sponsors{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.sponsor-info{
+    text-align: center;
+}
+.sponsor-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+.sponsor-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+}
 
-
+.sponsors-logos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    filter: grayscale(100%);
+    margin-top: 50px;
+}
 @media screen and (max-width: 576px) {
     .navs {
         flex-direction: column;
@@ -276,5 +298,12 @@
 .facts-title, .facts-description{
 text-align: center;
 }
+.sponsors-logos{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin: 0 auto;
+    justify-items: center;
+}
 
 }
+
