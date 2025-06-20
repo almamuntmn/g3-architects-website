@@ -181,6 +181,54 @@
     margin-left: -90px;
 }
 
+/* some-facts style */
+.some-facts{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+
+.facts-title{
+    font: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.facts-description{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+}
+
+.card{
+    width: 240px;
+    height: 240px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    border-radius: 8px;
+}
+.card-info{
+    padding: 45px 35px;
+}
+
+.number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card-text{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 
 @media screen and (max-width: 576px) {
     .navs {
@@ -217,6 +265,16 @@
 }
 .exbtn{
     margin: -50px auto;
+}
+
+.card-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.facts-title, .facts-description{
+text-align: center;
 }
 
 }
